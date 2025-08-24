@@ -1,0 +1,162 @@
+/* ========================
+   Footer Main Styles
+======================== */
+.footer {
+  background-color: #f2f2f2;
+  padding: 50px 20px;
+  margin-top: 30px;
+  border-top: 1px solid #ddd;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  gap: 40px;
+}
+
+/* ========================
+   Footer Sections
+======================== */
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #e63946;
+  margin-bottom: 20px;
+}
+
+.logo-icon {
+  margin-right: 10px;
+  font-size: 28px;
+  color: #e63946;
+}
+
+.footer-section h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2f4f4f;
+  margin-bottom: 12px;
+}
+
+.footer-section p {
+  margin: 5px 0;
+  color: #333;
+  font-size: 14px;
+}
+
+/* ========================
+   Links
+======================== */
+.footer-list {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-list li {
+  margin: 8px 0;
+  font-size: 14px;
+  cursor: pointer;
+  color: #222;
+  transition: color 0.3s ease;
+}
+
+.footer-list li:hover {
+  color: #e63946;
+}
+
+/* ========================
+   Social Icons
+======================== */
+.social-icons {
+  display: flex;
+  gap: 12px;
+  font-size: 22px;
+  margin-top: 8px;
+}
+
+.social-icons svg {
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons svg:hover {
+  transform: scale(1.2);
+  color: #e63946;
+}
+
+/* ========================
+   App Buttons
+======================== */
+.app-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.app-btn {
+  padding: 10px 15px;
+  border-radius: 6px;
+  border: 1px solid #888;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: white;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.app-btn:hover {
+  background: #e63946;
+  color: #fff;
+  border-color: #e63946;
+}
+
+/* ========================
+   Payment Icons
+======================== */
+.payment-icons {
+  display: flex;
+  gap: 12px;
+  font-size: 32px;
+  margin-top: 10px;
+}
+
+/* ========================
+   Responsive
+======================== */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .footer-logo {
+    justify-content: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .app-buttons {
+    justify-content: center;
+  }
+
+  .payment-icons {
+    justify-content: center;
+  }
+}

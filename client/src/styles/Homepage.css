@@ -1,0 +1,453 @@
+.banner-img {
+  margin-top: 60px;
+}
+
+/* Headings and layout */
+.home-page h1 {
+  color: gray;
+  font-family: "Playfair Display", serif;
+}
+
+.home-page {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+/* Card base in home page */
+.home-page .card {
+  background-color: rgba(128, 128, 128, 0.097);
+  width: 18rem;
+}
+
+.home-page .card-name-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.home-page .card-price {
+  color: green;
+  font-weight: bold;
+}
+
+.home-page button {
+  border-radius: 0;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.home-page .card-text {
+  color: rgb(90, 89, 89);
+}
+
+/* Hover scale for any card image in home-page */
+.home-page .card img:hover {
+  transform: scale(0.9);
+}
+
+/* Removed conflicting height: 300px !important */
+
+/* =============== Filters =============== */
+.filters h4 {
+  margin-top: 10px;
+  color: gray !important;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.337);
+}
+
+.catagoeriesDiv {
+  margin: auto;
+  align-items: flex-start;
+}
+
+.ant-checkbox-wrapper {
+  margin: 2px;
+}
+
+.ant-radio-wrapper {
+  margin-bottom: 5px !important;
+  margin-left: 10px;
+}
+
+.filters button {
+  background-color: orangered;
+  width: 100%;
+  border: none;
+  border-radius: 2px;
+  margin-top: 20px;
+}
+
+.filters {
+  width: 21%;
+}
+
+/* Load more button */
+.loadmore {
+  color: green;
+  font-weight: bold;
+  font-size: 20px !important;
+}
+
+/* =============== Hero / Landing =============== */
+.landingpage {
+  padding: 5rem 2rem;
+  background: #f9f9f9;
+}
+
+.L-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.Dis {
+  flex: 1;
+  max-width: 550px;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ff4d4d;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+}
+
+.main-heading {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.2rem;
+  color: #222;
+}
+
+.main-heading span {
+  color: #ff4d4d;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.shop-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background: #ff4d4d;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.shop-btn:hover {
+  background: #e63939;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.Photo img {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Responsive for hero */
+@media (max-width: 992px) {
+  .L-page {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .Dis {
+    max-width: 100%;
+  }
+  .Photo img {
+    margin-bottom: 2rem;
+  }
+}
+
+/* =============== Product cards (merged, no duplicates) =============== / */
+.product-card {
+  border-radius: 12px;
+  overflow: hidden;
+  transform: translateZ(0);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  will-change: transform;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+.product-card .card-body {
+  padding: 0.75rem 0.85rem;
+}
+
+.product-card .card-title {
+  font-size: 0.95rem;
+  line-height: 1.25rem;
+  margin-bottom: 0.35rem;
+}
+
+.product-card h6 {
+  font-size: 0.95rem;
+  margin-bottom: 0.4rem;
+}
+
+.product-card .card-text.small {
+  font-size: 0.82rem;
+  line-height: 1.15rem;
+}
+
+/* Use this class on product images instead of forcing card-img-top height */
+.product-img {
+  height: 170px;
+
+  object-fit: cover;
+  width: 100%;
+  display: block;
+}
+
+/* Remove image radius since parent clips corners */
+.card-img-top {
+  border-radius: 0;
+}
+
+.indicardDiv {
+  width: 100%;
+}
+
+/* Spacing helpers */
+@media (max-width: 576px) {
+  .col-6 {
+    padding: 0.5rem;
+  }
+}
+
+/* Custom grid for better spacing (applies only when row has g-4) */
+.row.g-4 > * {
+  padding: 1rem;
+}
+
+/* Custom 5-column at very large widths (20%) */
+@media (min-width: 1400px) {
+  .col-xxl-2-4 {
+    flex: 0 0 auto;
+    width: 20%;
+  }
+}
+
+/* Buttons Container */
+.product-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: auto;
+} /* ProductCards.css */
+
+/* Grid Layout */
+.products-grid {
+  gap: 20px 0;
+  margin: 0;
+}
+
+.product-col {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 25px;
+}
+
+/* Card Styling */
+.product-card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Image Container */
+.product-image-container {
+  overflow: hidden;
+  border-radius: 12px 12px 0 0;
+  position: relative;
+}
+
+.product-image {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+.product-image:hover {
+  transform: scale(1.08);
+}
+
+/* Card Body */
+.product-body {
+  padding: 16px;
+  min-height: 180px;
+}
+
+/* Product Title */
+.product-title {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #333;
+  line-height: 1.3;
+}
+
+/* Product Price */
+.product-price {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+/* Product Description */
+.product-description {
+  font-size: 12px;
+  line-height: 1.4;
+  flex-grow: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+/* Buttons Container */
+.product-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.details-btn,
+.cart-btn {
+  font-size: 12px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.details-btn {
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+}
+
+.details-btn:hover {
+  background-color: #138496;
+  border-color: #117a8b;
+  transform: translateY(-2px);
+}
+
+.cart-btn {
+  background-color: #343a40;
+  border-color: #343a40;
+}
+
+.cart-btn:hover {
+  background-color: #23272b;
+  border-color: #1d2124;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+  .product-col {
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-bottom: 20px;
+  }
+
+  .product-body {
+    padding: 12px;
+    min-height: 160px;
+  }
+
+  .product-image {
+    height: 180px;
+  }
+
+  .product-title {
+    font-size: 13px;
+  }
+
+  .product-price {
+    font-size: 16px;
+  }
+
+  .details-btn,
+  .cart-btn {
+    font-size: 11px;
+    padding: 6px 12px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .product-image {
+    height: 190px;
+  }
+}
+
+@media (min-width: 992px) {
+  .product-col {
+    margin-bottom: 30px;
+  }
+
+  .product-image {
+    height: 220px;
+  }
+
+  .product-body {
+    padding: 18px;
+  }
+}
+
+/* Loading Animation */
+.product-card.loading {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+/* Focus States for Accessibility */
+.details-btn:focus,
+.cart-btn:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}
+
+/* Button hover effects only */
+.details-btn:hover {
+  background-color: #138496;
+  border-color: #117a8b;
+  transform: translateY(-2px);
+}
+
+.cart-btn:hover {
+  background-color: #23272b;
+  border-color: #1d2124;
+  transform: translateY(-2px);
+}
