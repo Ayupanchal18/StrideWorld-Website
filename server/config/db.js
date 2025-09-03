@@ -9,7 +9,7 @@ const connectDB = async () => {
       `Conneted To Mongodb Databse ${conn.connection.host}`,
     );
   } catch (error) {
-    console.log(`Error in Mongodb ${error}`.bgRed.white);
+    console.log(`Error in Mongodb ${error}`);
   }
 };
 

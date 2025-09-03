@@ -38,7 +38,6 @@ const Header = () => {
           </button>
 
           <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-            {/* Logo + Nav Links */}
             <div className="navBarImageandNavLinksDiv d-flex align-items-center">
               <NavLink to="/" className="navbar-brand d-flex align-items-center">
                 <img src="/images/logo1.png" alt="StrideWorld Logo" className="nav-logo" />

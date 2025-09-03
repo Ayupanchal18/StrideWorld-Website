@@ -11,6 +11,7 @@ export const requireSignIn = async (req, res, next) => {
     req.user = decode;
     next();
   } catch (error) {
+    res.status(401).json({ success: false, message: "Invalid or expired token" });
     console.log(error);
   }
 };

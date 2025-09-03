@@ -19,7 +19,7 @@ const AuthProvider = ({ children }) => {
                 ...auth,
                 user: parseData.user,
                 token: parseData.token,
-            });
+            })
         }
         //eslint-disable-next-line
     }, []);

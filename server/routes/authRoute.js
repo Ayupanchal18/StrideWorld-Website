@@ -2,12 +2,7 @@ import express from "express";
 import {
   registerController,
   loginController,
-  testController,
-  forgotPasswordController,
   updateProfileController,
-  getOrdersController,
-  getAllOrdersController,
-  orderStatusController,
 } from "../controller/authController.js";
 import { isAdmin, requireSignIn } from "../middlewares/authMiddleware.js";
 
@@ -15,6 +10,7 @@ import { isAdmin, requireSignIn } from "../middlewares/authMiddleware.js";
 const router = express.Router();
 
 //routing
+
 //REGISTER || METHOD POST
 router.post("/register", registerController);
 
