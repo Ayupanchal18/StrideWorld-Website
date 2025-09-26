@@ -38,19 +38,6 @@ h2 {
 .account {
   margin-left: 10px;
 }
-/* .P1button {
-  background-color: white;
-  color: black;
-  border-radius: 4px;
-  border: 1px solid transparent;
-  font-size: 14px;
-  font-weight: 600;
-  width: 60px;
-  height: 30px;
-  transition: 0.2s ease-out;
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
-    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-} */
 
 .P1button:hover {
   cursor: pointer;
@@ -788,103 +775,6 @@ nav {
   transform: scale(0.96);
   color: rgb(34, 34, 34);
 }
-
-/* .ViewAllblogs:hover {
-  cursor: pointer;
-  background-color: #e84545;
-} */
-
-/* FOOTER */
-/* .footer {
-  display: flex;
-  justify-content: space-evenly;
-  padding: 50px;
-}
-.f-1 {
-  width: 460px;
-  font-family: "Didact Gothic", sans-serif;
-  line-height: 18px;
-  color: #465b52;
-}
-.f-1 img {
-  height: 30px;
-}
-
-.f-1 h4 span {
-  font-weight: 600;
-  font-family: "Didact Gothic", sans-serif;
-}
-
-.social {
-  margin-top: 10px;
-}
-
-.f-1 img {
-  margin-bottom: 20px;
-}
-
-.f-2 {
-  width: 250px;
-  /* display: flex; */
-/* flex-direction: column; */
-/* justify-content: center; */
-/* color: #465b52;
-}
-.f-2 ul a li {
-  list-style: none;
-}
-
-.f-2 ul a {
-  color: black;
-  text-decoration: none;
-  transition: 0.2s ease;
-  line-height: 22px;
-  font-family: "Didact Gothic", sans-serif;
-}
-
-.f-2 ul a:hover {
-  color: #088178;
-}
-
-.f-2 ul li {
-  list-style: none;
-}
-#top-name {
-  font-size: 13px;
-  font-weight: 700;
-  font-family: "Didact Gothic", sans-serif;
-}
-.f-3 {
-  width: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: #465b52;
-  font-family: "Didact Gothic", sans-serif;
-}
-
-.store-link button {
-  padding: 10px 10px;
-  border: 1px solid #088178;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  border-radius: 4px;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  transition: 0.2s ease;
-  font-family: "Didact Gothic", sans-serif;
-}
-.store-link button:hover {
-  cursor: pointer;
-  color: white;
-  background-color: #088178;
-}
-
-.payment {
-  display: flex;
-  column-gap: 10px;
-} */
-*/
-/* Products Container and items */
 
 .productSection {
   width: 80vw;
